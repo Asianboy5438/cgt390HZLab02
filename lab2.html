@@ -50,7 +50,7 @@
     function updateTitle() {
       // TODO: set the title text to show the count, e.g., "My Items (N)"
       // Use items.length for N
-      titleEl.textContent = 'My Items (${items.length})';
+      titleEl.textContent = `My Items (${items.length})`;
 
     }
 
@@ -65,7 +65,7 @@
       // TODO: call updateTitle() at the end
 
       listEl.innerHTML = "";
-      items.foreach((item) => {
+      items.forEach((item) => {
         const li = document.createElement("li");
         li.textContent = item.name;
         if (item.done) {
